@@ -151,7 +151,7 @@ export default function App() {
   // Inject custom styles for hover effects and smooth scrolling
   useEffect(() => {
     const style = document.createElement('style');
-    style.innerHTML = `
+    style.innerHTML = 
       html { scroll-behavior: smooth; }
       body { background-color: #f8f9fa; }
       .project-card { 
@@ -161,7 +161,7 @@ export default function App() {
         transform: translateY(-8px); 
         box-shadow: 0 1rem 3rem rgba(0,0,0,.12)!important; 
       }
-    `;
+    ;
     document.head.appendChild(style);
   }, []);
 
